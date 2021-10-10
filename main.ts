@@ -153,9 +153,9 @@ basic.forever(function () {
 })
 basic.forever(function () {
     if (Humedad < 850) {
-        servos.P0.setAngle(0)
+        servos.P1.setAngle(0)
     } else {
-        servos.P0.setAngle(134)
+        servos.P1.setAngle(134)
         basic.pause(15000)
     }
 })
