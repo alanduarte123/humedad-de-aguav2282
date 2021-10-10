@@ -91,7 +91,6 @@ basic.showLeds(`
     # # # # #
     # # # # #
     `)
-music.playMelody("C D E F G A B C5 ", 1999)
 basic.forever(function () {
     Humedad = pins.analogReadPin(AnalogPin.P1)
     if (Humedad > 1010) {
@@ -152,10 +151,10 @@ basic.forever(function () {
         `)
 })
 basic.forever(function () {
-    if (Humedad < 850) {
-        servos.P2.setAngle(0)
-    } else {
+    if (Humedad < 623) {
         servos.P2.setAngle(134)
         basic.pause(15000)
+    } else {
+        servos.P2.setAngle(0)
     }
 })
