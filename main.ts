@@ -9,17 +9,22 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.AB, function () {
-    basic.showString("R")
-    control.reset()
+    basic.showString("" + (input.temperature() * (9 / 5) + 32) + "F")
 })
 input.onButtonPressed(Button.B, function () {
     temperatura = temperatura
     basic.showString("" + input.temperature() + "C")
-    basic.showString("" + (input.temperature() * (9 / 5) + 32) + "F")
 })
 let temperatura = 0
 let Humedad = 0
 music.playMelody("C5 B C5 B C5 B C5 B ", 999)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    # # # # #
+    `)
 basic.showLeds(`
     . . # . .
     . . . . .
