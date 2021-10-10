@@ -1,5 +1,6 @@
 {
     "name": "humedad de agua(V2.28.4)",
+    "version": "1.0.0",
     "description": "",
     "dependencies": {
         "core": "*",
